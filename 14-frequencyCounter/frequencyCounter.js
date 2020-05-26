@@ -1,23 +1,22 @@
 function frequencyCounter(word) {
   // Insert code here;
-  var map = new Map();
-  freqCounter = 1;
+  
+  var obj = {}; // declare obj.
+  freqCounter = 1; // every letter has frequency of 1 in default.
 
   for(var i = 0; i < word.length; i++){
 
-    map.set(word.charAt(i),freqCounter);
-    
-     for(var j = 0 ; j<i; j++){
-       if(word.charAt(i) == word.charAt(j)){
-       freqCounter++;
-       map.set(word.charAt(i),freqCounter)
-       //console.log("j: "+ j+" freqcounter: " + freqCounter);
-       break;
-       }
+    for(var j = 0 ; j<i; j++){ //check for duplicate characters.
+      if(word.charAt(i) == word.charAt(j)){
+      freqCounter++;
+      obj[word.charAt(i)] = freqCounter; // set value into obj.
+      }
      }
-     return map.get(charAt[i]);
-  }
-
+  
+     obj[word.charAt(i)] = freqCounter; // set value into obj.
+     freqCounter = 1; // reset counter.
+ }
+  return obj;
 }
 
 // Do not edit this line;

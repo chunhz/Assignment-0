@@ -1,15 +1,15 @@
 class MySolution {
   countDownSum(num) {
     //this.num = num;
-    var sum = num;
-    if(num != 0){
-    num --;
-      this.countDownSum(num);
-    }
-    sum += num;
-  return sum;
+
+    if(num == 1)
+      return 1;
+    else if (num != 0)
+      return (num + this.countDownSum(num - 1));
+    
+  }
 }
-}
+
 
 // Do not edit this line;
 let StudentSolution = MySolution;

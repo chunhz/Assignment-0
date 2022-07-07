@@ -38,7 +38,7 @@
   "homepage": "https://github.com/ajLapid718/TTP-PIS-Summer-2020-Assignment-0-Fundamentals-Of-JavaScript#readme",
   "dependencies": {
     "faker": "^4.1.0",
-    "moment": "^2.25.1",
+    "moment": "^2.29.4",
     "sinon": "^9.0.2"
   },
   "devDependencies": {
